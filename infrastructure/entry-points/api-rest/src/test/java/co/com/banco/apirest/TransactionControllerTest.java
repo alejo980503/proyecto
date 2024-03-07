@@ -1,7 +1,6 @@
 package co.com.banco.apirest;
 
 import co.com.banco.apirest.transaction.TransactionController;
-import co.com.banco.apirest.util.ConstantsTest;
 import co.com.banco.model.transaction.Transaction;
 import co.com.banco.usecase.TransactionUseCase;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,7 +1,6 @@
 package co.com.banco.apirest;
 
 import co.com.banco.apirest.client.ClientController;
-import co.com.banco.apirest.util.ConstantsTest;
 import co.com.banco.model.client.Client;
 import co.com.banco.usecase.ClientUseCase;
 import com.fasterxml.jackson.databind.ObjectMapper;

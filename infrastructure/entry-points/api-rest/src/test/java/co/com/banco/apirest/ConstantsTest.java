@@ -1,4 +1,4 @@
-package co.com.banco.apirest.util;
+package co.com.banco.apirest;
 
 import co.com.banco.apirest.client.validationRQ.ClientRQ;
 import co.com.banco.apirest.client.validationRQ.ClientUpdateRQ;

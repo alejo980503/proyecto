@@ -12,10 +12,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/product", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -35,7 +32,7 @@ public class ProductController {
         return ResponseEntity.ok().body(productUseCase.save(product));
     }
 
-    @PostMapping(path = "/update")
+    @PutMapping(path = "/update")
     public ResponseEntity<Product> update(@RequestBody ProductUpdateRQ productUpdateRQ) {
         Product product= objectMapper.convertValue(productUpdateRQ,Product.class);
         ProductValidator.validateStatus(product.getStatus());
